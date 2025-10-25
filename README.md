@@ -15,15 +15,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 - Type `y` then enter key in any prompts!
 
 ```
-pkg update -y && pkg upgrade -y && \
-pkg install libjansson wget nano -y && \
-mkdir -p ccminer && cd ccminer && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/ccminer && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/config.json && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/start.sh && \
-chmod +x ccminer start.sh && \
-echo 'bash /data/data/com.termux/files/home/ccminer/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && \
-bash /data/data/com.termux/files/home/ccminer/start.sh
+pkg update -y && pkg upgrade -y && pkg install libjansson wget nano -y && mkdir -p ccminer-rismzun && cd ccminer-rismzun && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/ccminer && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/config.json && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/start.sh && chmod +x ccminer start.sh && echo 'bash /data/data/com.termux/files/ccminer-rismzun/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh
 ```
 
 ## Usage:
@@ -60,7 +52,7 @@ nano config.json
 ```
 2. Start ccminer with:
 ```
-~/ccminer/start.sh
+~/ccminer-rismzun/start.sh
 ```
 3. Close ccminer with:
 ```
@@ -76,15 +68,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 2. ติดตั้ง lib และ ccminer แล้วตั้งค่าให้รันอัตโนมัติ:
 - หาก command ถามให้พิมพ์ `y` แล้วกด enter
 ```
-pkg update -y && pkg upgrade -y && \
-pkg install libjansson wget nano -y && \
-mkdir -p ccminer && cd ccminer && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/ccminer && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/config.json && \
-wget https://raw.githubusercontent.com/rismzun/ccminer-auto-run/main/start.sh && \
-chmod +x ccminer start.sh && \
-echo 'bash /data/data/com.termux/files/home/ccminer/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && \
-bash /data/data/com.termux/files/home/ccminer/start.sh
+pkg update -y && pkg upgrade -y && pkg install libjansson wget nano -y && mkdir -p ccminer-rismzun && cd ccminer-rismzun && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/ccminer && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/config.json && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/start.sh && chmod +x ccminer start.sh && echo 'bash /data/data/com.termux/files/ccminer-rismzun/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh
 ```
 # การใช้งาน:
 1. แก้ไข pools, address, worker name:
@@ -119,7 +103,7 @@ nano config.json
 ```
 2. เริ่มต้น ccminer ด้วย:
 ```
-~/ccminer/start.sh
+~/ccminer-rismzun/start.sh
 ```
 3. ปิด ccminer ด้วย:
 ```
