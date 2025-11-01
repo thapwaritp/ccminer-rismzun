@@ -15,7 +15,10 @@ https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.11
 - Type `y` then enter key in any prompts!
 
 ```
-pkg update -y && pkg upgrade -y && pkg install libjansson wget nano -y && mkdir -p ccminer-rismzun && cd ccminer-rismzun && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/ccminer && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/config.json && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/start.sh && chmod +x ccminer start.sh && echo 'bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh
+pkg update -y
+```
+```
+pkg upgrade -y && pkg install libjansson wget nano -y && mkdir -p ccminer-rismzun && cd ccminer-rismzun && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/ccminer && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/config.json && wget https://raw.githubusercontent.com/thapwaritp/ccminer-rismzun/main/start.sh && chmod +x ccminer start.sh && echo 'bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh' >> /data/data/com.termux/files/usr/etc/bash.bashrc && bash /data/data/com.termux/files/home/ccminer-rismzun/start.sh
 ```
 
 ## Usage:
